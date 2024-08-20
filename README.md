@@ -1,11 +1,42 @@
-This is a Kotlin Multiplatform project targeting Android.
+MyComposeApp
+This Android application demonstrates a two-screen architecture using Jetpack Compose, Coil for image loading, Decompose for navigation, and the MVI architecture pattern with MVIKotlin.
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+Features
+LazyColumn: Displays a scrollable list of images.
+Coil: Loads PNG and SVG images from the internet and local resources.
+Decompose: Manages screen navigation.
+MVIKotlin: Implements the Model-View-Intent (MVI) architecture.
+Technologies
+Kotlin
+Jetpack Compose
+Coil
+Decompose
+MVIKotlin
+Getting Started
 
+Prerequisites
+Android Studio Giraffe | 2022.3.1+
+Kotlin 1.8+
+Gradle 8.1+
+Installation
+Clone the Repository
 
-Learn more about [Kotlin Multiplatform](h ttps://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+bash
+
+Copy code
+git clone https://github.com/Hagar-Gomaa/DeComposePractise.git
+cd MyComposeApp
+Open the Project in Android Studio
+
+Launch Android Studio and open the project directory.
+
+Sync the Project
+
+Allow the project to sync. Gradle will download necessary dependencies.
+
+Build and Run
+Connect a Device or Start an Emulator
+
+Build and Run the App
+
+In Android Studio, select your target device and click the "Run" button.
