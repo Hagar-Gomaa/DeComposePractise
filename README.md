@@ -13,6 +13,7 @@ Coil
 Decompose
 MVIKotlin
 Getting Started
+
 Prerequisites
 Android Studio Giraffe | 2022.3.1+
 Kotlin 1.8+
@@ -38,8 +39,4 @@ Connect a Device or Start an Emulator
 
 Build and Run the App
 
-In Android Studio, select your target device and click the "Run" button. Alternatively, use the command line:
-
-bash
-Copy code
-./gradlew installDebug
+In Android Studio, select your target device and click the "Run" button.
