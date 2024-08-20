@@ -14,21 +14,24 @@ import com.hager_gomaa.decomposepractise.R
 import com.hager_gomaa.decomposepractise.viewmodel.state.ImageIdUiState
 
 @Composable
-fun  LuzyColumItemResoursesData (list:List<ImageIdUiState>,onClicked:()->Unit){
+fun LuzyColumItemResoursesData(list: List<ImageIdUiState>, onClicked: () -> Unit) {
+    // luzy colum show list of items
     LazyColumn(
         modifier = Modifier
             .fillMaxSize(),
         contentPadding = PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
-        item { Text(stringResource(R.string.all_images_screen_two)) }
+        item { Text(stringResource(R.string.all_images_screen_two)) } // show first text
+        // retrive data of all items list
         items(list) {
             ImageLocalItem(it)
         }
+        // show button in end to go to previous screen
         item {
             ButtonItem(text = stringResource(R.string.back)) {
                 onClicked()
-          }
+            }
         }
 
     }

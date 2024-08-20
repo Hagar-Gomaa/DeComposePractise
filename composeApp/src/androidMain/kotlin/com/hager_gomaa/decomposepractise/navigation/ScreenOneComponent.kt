@@ -1,14 +1,14 @@
 package com.hager_gomaa.decomposepractise.navigation
 
 import com.arkivanov.decompose.ComponentContext
-
-class ListOneComponent (
+ //  handel Screen One  Navigation
+class ScreenOneComponent (
     componentContext: ComponentContext,
     private val onNavigateToScreenTwo: () -> Unit
 ): ComponentContext by componentContext {
-    fun onEvent(event: ScreenEvent) {
+    fun onEvent(event: ScreenOneEvent) {
         when(event) {
-           is ScreenEvent.ClickButtonA -> onNavigateToScreenTwo()
+           is ScreenOneEvent.ClickButtonA -> onNavigateToScreenTwo()
 
         }
     }

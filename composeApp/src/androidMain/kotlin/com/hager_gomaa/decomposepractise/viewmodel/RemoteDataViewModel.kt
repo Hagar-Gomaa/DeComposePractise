@@ -11,14 +11,17 @@ import javax.inject.Inject
 
 @HiltViewModel
 class RemoteDataViewModel @Inject constructor() : ViewModel() {
+    // state to save state Data
     private val _state = MutableStateFlow(RemoteDataUiState())
     val state = _state.asStateFlow()
 
     init {
+        // call fun with viewModel object create
         getRemotePhotos()
     }
 
     fun getRemotePhotos() {
+        // update state with list of remote images in jpeg  and svg
         _state.update {
             it.copy(
                 list = listOf(

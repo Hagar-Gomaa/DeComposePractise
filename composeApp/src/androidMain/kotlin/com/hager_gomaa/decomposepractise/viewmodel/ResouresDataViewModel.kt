@@ -12,14 +12,17 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ResouresDataViewModel @Inject constructor() : ViewModel() {
+    // state to save state Data
     private val _state = MutableStateFlow(ResoursesDataUiState())
     val state = _state.asStateFlow()
 
     init {
+        // call fun with viewModel object create
         getPhotosResourse()
     }
 
     fun getPhotosResourse() {
+        // update state with list of ids images in jpeg  and svg
         _state.update {
             it.copy(
                 list = listOf(

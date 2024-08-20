@@ -14,19 +14,29 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ButtonItem (text:String,onClicke :()->Unit){
+fun ButtonItem(text: String, onClick: () -> Unit) {
     Column(
+        // make it with fill max screen width and with constant height with set it centerHorizontally
         modifier = Modifier
             .fillMaxWidth()
             .height(50.dp)
     ) {
 
         Button(
-            modifier = Modifier.width(200.dp).height(70.dp).align(Alignment.CenterHorizontally),
-            colors = ButtonDefaults.buttonColors(backgroundColor = Color.Blue, contentColor = Color.White),
+            // make it with constant width and height with set it centerHorizontally
+            modifier = Modifier
+                .width(200.dp)
+                .height(70.dp)
+                .align(Alignment.CenterHorizontally),
+            // set button background color and its text color
+            colors = ButtonDefaults.buttonColors(
+                backgroundColor = Color.Blue,
+                contentColor = Color.White
+            ),
             onClick = {
-              onClicke()
+                onClick()
             }) {
+            // set button text
             Text(text)
         }
     }

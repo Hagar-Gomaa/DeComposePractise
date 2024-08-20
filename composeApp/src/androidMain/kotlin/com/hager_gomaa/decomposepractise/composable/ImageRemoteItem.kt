@@ -16,19 +16,17 @@ import com.hager_gomaa.decomposepractise.viewmodel.state.ImageUiState
 @Composable
 fun ImageItem(item: ImageUiState) {
     Column(
-        modifier = Modifier
-            .fillMaxSize()
+        modifier = Modifier.fillMaxSize()
 
     ) {
+        // load image with coil from uri
         AsyncImage(
-            model = coil.request.ImageRequest.Builder(LocalContext.current)
-                .data(item.url)
-                .build(),
+            model = coil.request.ImageRequest.Builder(LocalContext.current).data(item.url).build(),
             contentDescription = "icon",
             contentScale = ContentScale.Crop,
             modifier = Modifier
-                .fillMaxWidth()
-                .height(300.dp)
+                .fillMaxWidth() // make it take screen width
+                .height(300.dp) //make it take 300 dp in height
         )
     }
 }

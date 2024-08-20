@@ -1,5 +1,6 @@
 package com.hager_gomaa.decomposepractise.navigation
 
-sealed interface ScreenEvent {
-    data object ClickButtonA: ScreenEvent
+// hande type of screen one events
+sealed interface ScreenOneEvent {
+    data object ClickButtonA : ScreenOneEvent
 }

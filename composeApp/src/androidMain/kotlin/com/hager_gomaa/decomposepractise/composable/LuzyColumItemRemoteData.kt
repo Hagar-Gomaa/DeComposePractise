@@ -14,21 +14,23 @@ import com.hager_gomaa.decomposepractise.R
 import com.hager_gomaa.decomposepractise.viewmodel.state.ImageUiState
 
 @Composable
-fun  LuzyColumItemRemoteData (list:List<ImageUiState>,onClicked:()->Unit){
+fun LuzyColumItemRemoteData(list: List<ImageUiState>, onClicked: () -> Unit) {
+    // luzy colum show list of items
     LazyColumn(
-        modifier = Modifier
-            .fillMaxSize(),
+        modifier = Modifier.fillMaxSize(),
         contentPadding = PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
-        item { Text(stringResource(R.string.all_images_screen_one)) }
+        item { Text(stringResource(R.string.all_images_screen_one)) }   // show first text
+        // retrive data of all items list
         items(list) {
             ImageItem(it)
         }
+        // show button in end to go to next screen
         item {
             ButtonItem(text = stringResource(R.string.next)) {
                 onClicked()
-          }
+            }
         }
 
     }
