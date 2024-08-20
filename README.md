@@ -1,28 +1,28 @@
 MyComposeApp
 This Android application demonstrates a two-screen architecture using Jetpack Compose, Coil for image loading, Decompose for navigation, and the MVI architecture pattern with MVIKotlin.
 
-Features:
+* Features:
 
-LazyColumn: Displays a scrollable list of images.
+1.LazyColumn: Displays a scrollable list of images.
 
-Coil: Loads PNG and SVG images from the internet and local resources.
+2.Coil: Loads PNG and SVG images from the internet and local resources.
 
-Decompose: Manages screen navigation.
+3.Decompose: Manages screen navigation.
 
-MVIKotlin: Implements the Model-View-Intent (MVI) architecture.
+4.MVIKotlin: Implements the Model-View-Intent (MVI) architecture.
 
 
-Technologies:
+* Technologies:
 
-Kotlin
+1.Kotlin
 
-Jetpack Compose
+2.Jetpack Compose
 
-Coil
+3.Coil
 
-Decompose
+4.Decompose
 
-MVIKotlin
+5.MVIKotlin
 
 Getting Started
 
@@ -32,41 +32,39 @@ Kotlin 1.8+
 Gradle 8.1+
 
 
-Installation:
+* Installation:
 
-First Way 
+- First Way ,
 
-Clone the Repository
+1.Clone the Repository
 
-get repo web uri clone link 
+2.get repo web uri clone link 
 
-then open android studio new  new project from version control and paste repo clone uri 
+3.then open android studio new  new project from version control and paste repo clone uri 
 
-then press ok , then let android studio load project file and dependancies
+4.then press ok , then let android studio load project file and dependancies
 
-Sync the Project
+5.Sync the Project
 
 
-another way ,
+-another way ,
 
-Clone the Repository
+1.Clone the Repository
 
 git clone https://github.com/Hagar-Gomaa/DeComposePractise.git
 
-Navigate to the Project Directory,
+2.Navigate to the Project Directory,
 
 cd MyComposeApp
 
-Open the Project in Android Studio
+3.Open the Project in Android Studio
 
-Launch Android Studio and open the project directory.
+4.Launch Android Studio and open the project directory.
 
-Sync the Project
-
-Allow the project to sync. Gradle will download necessary dependencies.
+5.Sync the Project Allow the project to sync. Gradle will download necessary dependencies.
 
 
-Build and Run :
+* Build and Run :
 
 Connect a Device or Start an Emulator
 
