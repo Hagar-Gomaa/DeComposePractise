@@ -1,43 +1,45 @@
-Application Overview
-This is a simple Android application built with Jetpack Compose, demonstrating two screens that display a list of images. The app leverages the following key technologies and architectures:
-
-Jetpack Compose for building the UI.
-
-LazyColumn to display a scrollable list of items.
-
-Coil for loading images, both PNG and SVG, from the internet and local resources.
-
-Decompose for navigation between screens.
-
-MVIKotlin to implement the MVI (Model-View-Intent) architecture.
+MyComposeApp
+This Android application demonstrates a two-screen architecture using Jetpack Compose, Coil for image loading, Decompose for navigation, and the MVI architecture pattern with MVIKotlin.
 
 Features
+LazyColumn: Displays a scrollable list of images.
+Coil: Loads PNG and SVG images from the internet and local resources.
+Decompose: Manages screen navigation.
+MVIKotlin: Implements the Model-View-Intent (MVI) architecture.
+Technologies
+Kotlin
+Jetpack Compose
+Coil
+Decompose
+MVIKotlin
+Getting Started
+Prerequisites
+Android Studio Giraffe | 2022.3.1+
+Kotlin 1.8+
+Gradle 8.1+
+Installation
+Clone the Repository
 
-First Screen: Displays a list of images loaded from the internet using Coil.
+bash
 
-Second Screen: Displays a list of images loaded from local resource files (PNG and SVG).
+Copy code
+git clone https://github.com/yourusername/MyComposeApp.git
+cd MyComposeApp
+Open the Project in Android Studio
 
-Navigation: Handled using Decompose.
+Launch Android Studio and open the project directory.
 
-MVI Architecture: The application follows the MVI architecture pattern, implemented using the MVIKotlin library.
+Sync the Project
 
+Allow the project to sync. Gradle will download necessary dependencies.
 
-Libraries Used
+Build and Run
+Connect a Device or Start an Emulator
 
-Jetpack Compose - Modern Android UI toolkit.
+Build and Run the App
 
-Coil - Image loading library for Kotlin.
+In Android Studio, select your target device and click the "Run" button. Alternatively, use the command line:
 
-Decompose - Kotlin Multiplatform lifecycle-aware component and state management.
-
-MVIKotlin - Kotlin Multiplatform MVI architecture library.
-
-
-
-
-The first screen fetches and displays images from the internet using Coil.
-The second screen loads images from the app's drawable resources.
-
-MVI Implementation The app follows the MVI architecture.
-
-
+bash
+Copy code
+./gradlew installDebug
