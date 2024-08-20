@@ -21,7 +21,7 @@ fun ButtonItem (text:String,onClicke :()->Unit){
             .height(50.dp)
     ) {
         Button(
-            modifier = Modifier.width(200.dp).height(50.dp).align(Alignment.CenterHorizontally),
+            modifier = Modifier.width(200.dp).height(70.dp).align(Alignment.CenterHorizontally),
             colors = ButtonDefaults.buttonColors(backgroundColor = Color.Blue, contentColor = Color.White),
             onClick = {
               onClicke()
