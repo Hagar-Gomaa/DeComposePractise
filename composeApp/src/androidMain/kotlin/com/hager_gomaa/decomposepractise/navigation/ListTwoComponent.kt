@@ -6,7 +6,5 @@ class ListTwoComponent(
     componentContext: ComponentContext, val onBackPressed: () -> Unit
 ) : ComponentContext by componentContext {
 
-    fun goBack() {
-        onBackPressed()
-    }
+
 }
