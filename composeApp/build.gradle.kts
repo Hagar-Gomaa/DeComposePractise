@@ -37,6 +37,10 @@ kotlin {
             implementation(libs.decompose)
             implementation(libs.decompose.jetbrains)
             implementation(libs.kotlinx.serialization.json)
+            implementation(libs.androidx.hilt.navigation.fragment)
+            implementation(libs.coil.kt.coil.compose)
+            implementation (libs.coil.svg )// For SVG support
+            implementation(libs.androidx.lifecycle.viewmodel.compose)
 
         }
     }
@@ -77,5 +81,9 @@ android {
     dependencies {
         debugImplementation(compose.uiTooling)
     }
+}
+dependencies {
+    implementation(libs.androidx.material3.android)
+    implementation(libs.volley)
 }
 
