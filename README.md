@@ -66,7 +66,7 @@ Sync the Project
 Allow the project to sync. Gradle will download necessary dependencies.
 
 
-Build and Run
+Build and Run :
 
 Connect a Device or Start an Emulator
 
