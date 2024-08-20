@@ -26,7 +26,7 @@ This Android application demonstrates a two-screen architecture using Jetpack Co
 
 Getting Started
 
-Prerequisites:
+* Prerequisites:
 Android Studio Giraffe | 2022.3.1+
 Kotlin 1.8+
 Gradle 8.1+
@@ -34,7 +34,7 @@ Gradle 8.1+
 
 * Installation:
 
-- First Way ,
+-First Way ,
 
 1.Clone the Repository
 
