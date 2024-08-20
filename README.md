@@ -23,7 +23,7 @@ Clone the Repository
 bash
 
 Copy code
-git clone https://github.com/yourusername/MyComposeApp.git
+git clone https://github.com/Hagar-Gomaa/DeComposePractise.git
 cd MyComposeApp
 Open the Project in Android Studio
 
