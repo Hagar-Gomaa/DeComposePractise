@@ -5,31 +5,31 @@ import com.hager_gomaa.decomposepractise.base.BaseViewModel
 import com.hager_gomaa.decomposepractise.screenone.ui.intent.ScreenOneIntent
 import com.hager_gomaa.decomposepractise.screenone.ui.uistate.ImageUiState
 import com.hager_gomaa.decomposepractise.screenone.ui.uistate.ScreenOneUiState
-import com.hager_gomaa.decomposepractise.screentwo.intent.ScreenTwoIntent
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class InternetPhotosViewModel @Inject constructor() : BaseViewModel<ScreenOneUiState, ScreenOneIntent>(
-    ScreenOneUiState()
-) {
+class InternetPhotosViewModel @Inject constructor() :
+    BaseViewModel<ScreenOneUiState, ScreenOneIntent>(
+        ScreenOneUiState()
+    ) {
     init {
         // call fun with viewModel object create
         processIntent()
     }
 
     private fun processIntent() {
-       viewModelScope.launch {
-           intent.collect{screenOneIntent->
-               when(screenOneIntent){
-                   ScreenOneIntent.onScreenOneOpen->getInternetPhotos()
-               }
-           }
-       }
+        viewModelScope.launch {
+            //  emit intent actions then handel type of action with its needed fun
+            intent.collect { screenOneIntent ->
+                when (screenOneIntent) {
+                    ScreenOneIntent.onScreenOneOpen -> getInternetPhotos()
+                }
+            }
+        }
     }
-
 
 
     fun getInternetPhotos() {

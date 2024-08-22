@@ -12,9 +12,10 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ResouresDataViewModel @Inject constructor(): BaseViewModel<ScreenTwoUiState, ScreenTwoIntent>(
-    ScreenTwoUiState()
-) {
+class ResouresDataViewModel @Inject constructor() :
+    BaseViewModel<ScreenTwoUiState, ScreenTwoIntent>(
+        ScreenTwoUiState()
+    ) {
     init {
         // call fun with viewModel object create
         processIntent()
@@ -22,9 +23,10 @@ class ResouresDataViewModel @Inject constructor(): BaseViewModel<ScreenTwoUiStat
 
     private fun processIntent() {
         viewModelScope.launch {
-            intent.collect{screenOneIntent->
-                when(screenOneIntent){
-                    ScreenTwoIntent.onScreenOneOpen->getPhotosResourse()
+            //  emit intent actions then handel type of action with its needed fun
+            intent.collect { screenOneIntent ->
+                when (screenOneIntent) {
+                    ScreenTwoIntent.onScreenOneOpen -> getPhotosResourse()
                 }
             }
         }
@@ -45,7 +47,7 @@ class ResouresDataViewModel @Inject constructor(): BaseViewModel<ScreenTwoUiStat
                     ImageIdUiState(R.drawable.ic_flower_shape),
                     ImageIdUiState(R.drawable.ic_view_image),
                     ImageIdUiState(R.drawable.ic_question_mark),
-                    )
+                )
             )
         }
         _state.update { it.copy(loading = false) }
