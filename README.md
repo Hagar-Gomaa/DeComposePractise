@@ -39,7 +39,7 @@ This Android application demonstrates a two-screen architecture using Jetpack Co
 
 ## **Installation:**
 
-> * **Method 1:**
+* **Method 1:**
 
 1. Clone the Repository
 
@@ -52,7 +52,7 @@ This Android application demonstrates a two-screen architecture using Jetpack Co
 5. Sync the Project
 
 
-> * **Method 2:**
+* **Method 2:**
 
 1. Clone the Repository
 
