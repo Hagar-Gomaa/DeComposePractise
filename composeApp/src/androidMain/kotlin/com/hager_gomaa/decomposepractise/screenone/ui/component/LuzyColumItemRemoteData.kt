@@ -28,24 +28,10 @@ fun LuzyColumItemRemoteData(items: ScreenOneUiState, onClicked: () -> Unit) {
         contentPadding = PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
+        //show row
         item {
-            // make row to show  items in same row
-            Row(Modifier.fillMaxWidth()) {
-                // show first text
-                Text(stringResource(R.string.images_in_jpeg), fontSize = 20.sp)
-                //make space to make next item in row end
-                Spacer(modifier = Modifier.weight(1f))
-                // show text show more to navigate next screem throw clicked fun
-                Text(
-                    modifier = Modifier.clickable { onClicked() },
-                    text = stringResource(R.string.showMore),
-                    color = Color(0xFF2A786C),
-                    fontSize = 14.sp
-                )
-
-            }
+        RowItem(onClicked= {  onClicked() })
         }
-
         // retrive data of all items list
         items(items.imageJpegList) {
             ImageItem(it)
