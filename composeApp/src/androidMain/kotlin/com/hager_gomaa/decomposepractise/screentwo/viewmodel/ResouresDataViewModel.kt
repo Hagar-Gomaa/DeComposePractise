@@ -1,16 +1,12 @@
 package com.hager_gomaa.decomposepractise.screentwo.viewmodel
 
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hager_gomaa.decomposepractise.R
 import com.hager_gomaa.decomposepractise.base.BaseViewModel
-import com.hager_gomaa.decomposepractise.screenone.ui.uistate.ScreenOneUiState
 import com.hager_gomaa.decomposepractise.screentwo.intent.ScreenTwoIntent
 import com.hager_gomaa.decomposepractise.screentwo.uistate.ImageIdUiState
 import com.hager_gomaa.decomposepractise.screentwo.uistate.ScreenTwoUiState
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -49,9 +45,11 @@ class ResouresDataViewModel @Inject constructor(): BaseViewModel<ScreenTwoUiStat
                     ImageIdUiState(R.drawable.ic_flower_shape),
                     ImageIdUiState(R.drawable.ic_view_image),
                     ImageIdUiState(R.drawable.ic_question_mark),
-                    ), loading = false
+                    )
             )
         }
+        _state.update { it.copy(loading = false) }
+
     }
 
 

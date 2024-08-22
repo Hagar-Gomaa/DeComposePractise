@@ -1,17 +1,16 @@
 package com.hager_gomaa.decomposepractise.screenone.ui.screen
 
-import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.hager_gomaa.decomposepractise.screenone.ui.component.LuzyColumItemRemoteData
+import com.hager_gomaa.decomposepractise.composable.Loading
 import com.hager_gomaa.decomposepractise.navigation.ScreenOneComponent
 import com.hager_gomaa.decomposepractise.navigation.ScreenOneEvent
+import com.hager_gomaa.decomposepractise.screenone.ui.component.LuzyColumItemRemoteData
 import com.hager_gomaa.decomposepractise.screenone.ui.intent.ScreenOneIntent
 import com.hager_gomaa.decomposepractise.screenone.ui.viewmodel.InternetPhotosViewModel
-import com.hager_gomaa.decomposepractise.screentwo.intent.ScreenTwoIntent
 
 @Composable
 fun ScreenOne(
@@ -24,11 +23,12 @@ fun ScreenOne(
     LaunchedEffect(Unit) {
         viewModel.intentActionExecutor(ScreenOneIntent.onScreenOneOpen)
     }
-     // show loading in loading state is true
+    // show loading in loading state is true
     when {
         state.loading -> {
-            CircularProgressIndicator()
+            Loading()
         }
+
         else -> {
             // luzy colum item to show list of images as recycler
             LuzyColumItemRemoteData(list = state.list) {

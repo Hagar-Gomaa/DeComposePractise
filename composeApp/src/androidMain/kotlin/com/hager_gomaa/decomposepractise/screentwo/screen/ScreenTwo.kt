@@ -1,11 +1,11 @@
 package com.hager_gomaa.decomposepractise.screentwo.screen
 
-import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.hager_gomaa.decomposepractise.composable.Loading
 import com.hager_gomaa.decomposepractise.composable.LuzyColumItemResoursesData
 import com.hager_gomaa.decomposepractise.navigation.ScreenTwoComponent
 import com.hager_gomaa.decomposepractise.screentwo.intent.ScreenTwoIntent
@@ -24,11 +24,14 @@ fun ScreenTwo(component: ScreenTwoComponent, viewModel: ResouresDataViewModel = 
     // show loading in loading state is true
     when {
         state.loading -> {
-            CircularProgressIndicator()
+            Loading()
         }
+
         else -> {
-    // luzy colum item to show list of images as recycler
-    LuzyColumItemResoursesData(list = state.list) {
-        component.onBackPressed()
+            // luzy colum item to show list of images as recycler
+            LuzyColumItemResoursesData(list = state.list) {
+                component.onBackPressed()
+            }
+        }
     }
-}}}
+}
