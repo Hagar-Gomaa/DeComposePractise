@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.sp
 import com.hager_gomaa.decomposepractise.R
 
 @Composable
-fun RowWithShowmore(onClicked: () -> Unit){
+fun RowWithTwoText(onClicked: () -> Unit){
 // make row to show  items in same row
 Row(Modifier.fillMaxWidth()) {
     // show first text

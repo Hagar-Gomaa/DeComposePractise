@@ -26,7 +26,7 @@ fun LuzyColumItemResoursesData(itemss: ScreenTwoUiState, onClicked: () -> Unit) 
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         item {
-            RowWithBackButton {
+            RowWithBackButtonAndtext {
                 onClicked()
             }
         }

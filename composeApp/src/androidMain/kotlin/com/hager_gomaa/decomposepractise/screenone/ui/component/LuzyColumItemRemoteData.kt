@@ -26,7 +26,7 @@ fun LuzyColumItemRemoteData(items: ScreenOneUiState, onClicked: () -> Unit) {
     ) {
         //show row
         item {
-            RowWithShowmore(onClicked = { onClicked() })
+            RowWithTwoText(onClicked = { onClicked() })
         }
         // retrive data of all items list
         items(items.imageJpegList) {

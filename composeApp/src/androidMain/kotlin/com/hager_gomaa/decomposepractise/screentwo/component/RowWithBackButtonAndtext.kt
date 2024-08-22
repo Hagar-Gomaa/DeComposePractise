@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.sp
 import com.hager_gomaa.decomposepractise.R
 
 @Composable
-fun RowWithBackButton (onClicked: () -> Unit) {
+fun RowWithBackButtonAndtext (onClicked: () -> Unit) {
     Row(
     Modifier
     .fillMaxWidth()
