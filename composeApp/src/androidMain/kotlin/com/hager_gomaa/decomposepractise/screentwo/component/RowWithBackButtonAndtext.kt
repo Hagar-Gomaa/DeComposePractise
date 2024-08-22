@@ -3,6 +3,7 @@ package com.hager_gomaa.decomposepractise.screentwo.component
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -17,7 +18,7 @@ fun RowWithBackButtonAndtext (onClicked: () -> Unit) {
     Row(
     Modifier
     .fillMaxWidth()
-    .height(24.dp)
+    .height(24.dp).padding(top = 24.dp)
     ) {
         // image button back
         ImageButton {
