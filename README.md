@@ -1,6 +1,9 @@
 MyComposeApp
 This Android application demonstrates a two-screen architecture using Jetpack Compose, Coil for image loading, Decompose for navigation, and the MVI architecture pattern with MVIKotlin.
 
+First Screen Show list of images of type jpeg and svg from internet . then next screen Show list of images of type jpeg and svg from app resources.
+
+
 * Features:
 
 1.LazyColumn: Displays a scrollable list of images.
