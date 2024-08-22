@@ -18,7 +18,7 @@ fun RowWithBackButtonAndtext (onClicked: () -> Unit) {
     Row(
     Modifier
     .fillMaxWidth()
-    .height(24.dp).padding(top = 24.dp)
+    .height(50.dp)
     ) {
         // image button back
         ImageButton {
