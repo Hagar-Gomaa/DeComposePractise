@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="all_images_screen_one">All Images Screen One</string>
-    <string name="all_images_screen_two">All Images Screen Two</string>
+    <string name="all_images_screen_one">All images screen one</string>
+    <string name="all_images_screen_two">All images screen two</string>
 
     <string name="next">Next</string>
     <string name="back">back</string>
+    <string name="showMore">Show more</string>
 </resources>

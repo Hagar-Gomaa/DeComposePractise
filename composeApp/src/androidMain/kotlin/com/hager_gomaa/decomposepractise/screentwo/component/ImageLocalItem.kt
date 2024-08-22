@@ -1,4 +1,4 @@
-package com.hager_gomaa.decomposepractise.composable
+package com.hager_gomaa.decomposepractise.screentwo.component
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
