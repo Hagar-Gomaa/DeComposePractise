@@ -32,7 +32,7 @@ fun ScreenOne(
         else -> {
             // luzy colum item to show list of images as recycler
             LuzyColumItemRemoteData(list = state.list) {
-                component.onEvent(ScreenOneEvent.ClickButtonA)
+                component.onEvent(ScreenOneEvent.ShowMoreClicked)
             }
         }
     }

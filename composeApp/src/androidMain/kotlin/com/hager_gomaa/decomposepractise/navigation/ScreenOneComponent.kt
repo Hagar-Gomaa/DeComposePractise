@@ -8,7 +8,7 @@ class ScreenOneComponent (
 ): ComponentContext by componentContext {
     fun onEvent(event: ScreenOneEvent) {
         when(event) {
-           is ScreenOneEvent.ClickButtonA -> onNavigateToScreenTwo()
+           is ScreenOneEvent.ShowMoreClicked -> onNavigateToScreenTwo()
 
         }
     }
