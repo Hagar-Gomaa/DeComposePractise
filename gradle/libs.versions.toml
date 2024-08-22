@@ -23,6 +23,8 @@ decompose = "2.2.0-alpha03"
 kotlinxSerializationJson = "1.6.1"
 lifecycleViewmodelCompose = "2.8.4"
 material3Android = "1.2.1"
+mvikotlin = "3.1.0"
+mvikotlinMain = "3.1.0"
 volley = "1.2.1"
 
 [libraries]
@@ -48,6 +50,8 @@ decompose = { module = "com.arkivanov.decompose:decompose", version.ref = "decom
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 
 androidx-material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3Android" }
+mvikotlin = { module = "com.arkivanov.mvikotlin:mvikotlin", version.ref = "mvikotlin" }
+mvikotlin-main = { module = "com.arkivanov.mvikotlin:mvikotlin-main", version.ref = "mvikotlinMain" }
 volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
 
 [plugins]
