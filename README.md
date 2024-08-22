@@ -4,6 +4,7 @@ This Android application demonstrates a two-screen architecture using Jetpack Co
 First Screen Show list of images of type jpeg and svg from internet . then next screen Show list of images of type jpeg and svg from app resources.
 
 
+see video..   [https://youtube.com/shorts/bhgo4sCxoZI?feature=shared] 
 * Features:
 
 1.LazyColumn: Displays a scrollable list of images.
@@ -41,7 +42,7 @@ Gradle 8.1+
 
 1.Clone the Repository
 
-2.get repo web uri clone link 
+2.get repo web uri copy link 
 
 3.then open android studio new  new project from version control and paste repo clone uri 
 
