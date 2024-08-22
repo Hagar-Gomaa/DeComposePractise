@@ -7,8 +7,8 @@ import com.arkivanov.decompose.extensions.compose.jetbrains.stack.animation.slid
 import com.arkivanov.decompose.extensions.compose.jetbrains.stack.animation.stackAnimation
 import com.arkivanov.decompose.extensions.compose.jetbrains.subscribeAsState
 import com.hager_gomaa.decomposepractise.navigation.DefaultRootComponent
-import com.hager_gomaa.decomposepractise.screens.ScreenOne
-import com.hager_gomaa.decomposepractise.screens.ScreenTwo
+import com.hager_gomaa.decomposepractise.screenone.ui.screen.ScreenOne
+import com.hager_gomaa.decomposepractise.screentwo.screen.ScreenTwo
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable

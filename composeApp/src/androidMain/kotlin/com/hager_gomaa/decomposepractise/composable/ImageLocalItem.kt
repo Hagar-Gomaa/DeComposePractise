@@ -10,7 +10,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.hager_gomaa.decomposepractise.viewmodel.state.ImageIdUiState
+import com.hager_gomaa.decomposepractise.screentwo.uistate.ImageIdUiState
 
 
 @Composable

@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.hager_gomaa.decomposepractise.R
-import com.hager_gomaa.decomposepractise.viewmodel.state.ImageIdUiState
+import com.hager_gomaa.decomposepractise.screentwo.uistate.ImageIdUiState
 
 @Composable
 fun LuzyColumItemResoursesData(list: List<ImageIdUiState>, onClicked: () -> Unit) {

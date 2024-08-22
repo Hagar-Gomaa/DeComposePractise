@@ -1,26 +1,40 @@
-package com.hager_gomaa.decomposepractise.viewmodel
+package com.hager_gomaa.decomposepractise.screenone.ui.viewmodel
 
-import androidx.lifecycle.ViewModel
-import com.hager_gomaa.decomposepractise.viewmodel.state.ImageUiState
-import com.hager_gomaa.decomposepractise.viewmodel.state.RemoteDataUiState
+import androidx.lifecycle.viewModelScope
+import com.hager_gomaa.decomposepractise.base.BaseViewModel
+import com.hager_gomaa.decomposepractise.screenone.ui.intent.ScreenOneIntent
+import com.hager_gomaa.decomposepractise.screenone.ui.uistate.ImageUiState
+import com.hager_gomaa.decomposepractise.screenone.ui.uistate.ScreenOneUiState
+import com.hager_gomaa.decomposepractise.screentwo.intent.ScreenTwoIntent
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class RemoteDataViewModel @Inject constructor() : ViewModel() {
-    // state to save state Data
-    private val _state = MutableStateFlow(RemoteDataUiState())
-    val state = _state.asStateFlow()
-
+class InternetPhotosViewModel @Inject constructor() : BaseViewModel<ScreenOneUiState, ScreenOneIntent>(
+    ScreenOneUiState()
+) {
     init {
         // call fun with viewModel object create
-        getRemotePhotos()
+        processIntent()
     }
 
-    fun getRemotePhotos() {
+    private fun processIntent() {
+       viewModelScope.launch {
+           intent.collect{screenOneIntent->
+               when(screenOneIntent){
+                   ScreenOneIntent.onScreenOneOpen->getInternetPhotos()
+               }
+           }
+       }
+    }
+
+
+
+    fun getInternetPhotos() {
+        // make loading true first
+        _state.update { it.copy(loading = true) }
         // update state with list of remote images in jpeg  and svg
         _state.update {
             it.copy(
@@ -34,9 +48,10 @@ class RemoteDataViewModel @Inject constructor() : ViewModel() {
                     ImageUiState("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFPAU8rBkD5OxnL5Zmi-mbhJrvyvb09n4Wfw&s"),
                     ImageUiState("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThg82X5FYawxzhUZBeFRy2xo4TQB_8FjR7Wg&s"),
                     ImageUiState("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Wr3oWsq6KobkPqznhl09Wum9ujEihaUT4Q&s"),
-                )
+                ), loading = false // after data loaded make it false
             )
         }
+
     }
 
 

@@ -40,7 +40,10 @@ kotlin {
             implementation(libs.coil.kt.coil.compose)
             implementation (libs.coil.svg )// For SVG support
             implementation(libs.androidx.lifecycle.viewmodel.compose)
-
+//            implementation(libs.mvikotlin)
+//            implementation(libs.mvikotlin.main)
+//            implementation(libs.mvikotlin.extensions.coroutines)
+//            implementation(libs.rx)
         }
     }
 }
