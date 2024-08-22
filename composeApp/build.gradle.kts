@@ -33,17 +33,16 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
-            implementation(libs.decompose)
-            implementation(libs.decompose.jetbrains)
-            implementation(libs.kotlinx.serialization.json)
-            implementation(libs.androidx.hilt.navigation.fragment)
-            implementation(libs.coil.kt.coil.compose)
-            implementation (libs.coil.svg )// For SVG support
-            implementation(libs.androidx.lifecycle.viewmodel.compose)
-//            implementation(libs.mvikotlin)
-//            implementation(libs.mvikotlin.main)
-//            implementation(libs.mvikotlin.extensions.coroutines)
-//            implementation(libs.rx)
+            implementation(libs.decompose) // decompose
+            implementation(libs.decompose.jetbrains)// decompose
+            implementation(libs.kotlinx.serialization.json) // serialization
+            implementation(libs.androidx.hilt.navigation.fragment) // hilt
+            implementation(libs.coil.kt.coil.compose) // coil
+            implementation (libs.coil.svg )// coil For SVG support
+            implementation(libs.androidx.lifecycle.viewmodel.compose) // viewmodel
+            implementation(libs.mvikotlin) //mvi kotlin
+            implementation(libs.mvikotlin.main) //mvi kotlin
+
         }
     }
 }
