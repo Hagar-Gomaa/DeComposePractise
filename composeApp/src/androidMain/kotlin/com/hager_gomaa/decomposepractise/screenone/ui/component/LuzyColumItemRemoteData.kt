@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Text
@@ -17,10 +18,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.hager_gomaa.decomposepractise.R
-import com.hager_gomaa.decomposepractise.screenone.ui.uistate.ImageUiState
+import com.hager_gomaa.decomposepractise.screenone.ui.uistate.ScreenOneUiState
 
 @Composable
-fun LuzyColumItemRemoteData(list: List<ImageUiState>, onClicked: () -> Unit) {
+fun LuzyColumItemRemoteData(items: ScreenOneUiState, onClicked: () -> Unit) {
     // luzy colum show list of items
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
@@ -31,7 +32,7 @@ fun LuzyColumItemRemoteData(list: List<ImageUiState>, onClicked: () -> Unit) {
             // make row to show  items in same row
             Row(Modifier.fillMaxWidth()) {
                 // show first text
-                Text(stringResource(R.string.all_images_screen_one), fontSize = 20.sp)
+                Text(stringResource(R.string.images_in_jpeg), fontSize = 20.sp)
                 //make space to make next item in row end
                 Spacer(modifier = Modifier.weight(1f))
                 // show text show more to navigate next screem throw clicked fun
@@ -44,9 +45,26 @@ fun LuzyColumItemRemoteData(list: List<ImageUiState>, onClicked: () -> Unit) {
 
             }
         }
+
         // retrive data of all items list
-        items(list) {
+        items(items.imageJpegList) {
             ImageItem(it)
         }
+        // space
+        item {
+            Spacer(modifier = Modifier.height(40.dp))
+        }
+        // show  text
+        item {
+            Text(
+                text = stringResource(R.string.images_in_svg),
+                fontSize = 20.sp
+            )
+        }
+        // retrive data of all items list
+        items(items.imageSvgList) {
+            ImageItem(it)
+        }
+
     }
 }

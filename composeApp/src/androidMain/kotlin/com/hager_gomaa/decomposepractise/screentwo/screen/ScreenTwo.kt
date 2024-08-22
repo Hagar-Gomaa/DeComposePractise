@@ -6,8 +6,8 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.hager_gomaa.decomposepractise.composable.Loading
-import com.hager_gomaa.decomposepractise.screentwo.component.LuzyColumItemResoursesData
 import com.hager_gomaa.decomposepractise.navigation.ScreenTwoComponent
+import com.hager_gomaa.decomposepractise.screentwo.component.LuzyColumItemResoursesData
 import com.hager_gomaa.decomposepractise.screentwo.intent.ScreenTwoIntent
 import com.hager_gomaa.decomposepractise.screentwo.viewmodel.ResouresDataViewModel
 
@@ -29,7 +29,7 @@ fun ScreenTwo(component: ScreenTwoComponent, viewModel: ResouresDataViewModel = 
 
         else -> {
             // luzy colum item to show list of images as recycler
-            LuzyColumItemResoursesData(list = state.list) {
+            LuzyColumItemResoursesData(state) {
                 component.onBackPressed()
             }
         }

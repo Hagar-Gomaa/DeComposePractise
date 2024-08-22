@@ -39,13 +39,14 @@ class ResouresDataViewModel @Inject constructor() :
         // update state with list of ids images in jpeg  and svg
         _state.update {
             it.copy(
-                list = listOf(
-                    ImageIdUiState(R.drawable.ic_android),
-                    ImageIdUiState(R.drawable.ic_flower_three),
-                    ImageIdUiState(R.drawable.ic_home),
-                    ImageIdUiState(R.drawable.ic_flower_two),
-                    ImageIdUiState(R.drawable.ic_flower_shape),
+                imageJpegList = listOf(
                     ImageIdUiState(R.drawable.ic_view_image),
+                    ImageIdUiState(R.drawable.ic_flower_two),
+                    ImageIdUiState(R.drawable.ic_flower_three),
+                ), imageSvgList = listOf(
+                    ImageIdUiState(R.drawable.ic_android),
+                    ImageIdUiState(R.drawable.ic_home),
+                    ImageIdUiState(R.drawable.ic_flower_shape),
                     ImageIdUiState(R.drawable.ic_question_mark),
                 )
             )

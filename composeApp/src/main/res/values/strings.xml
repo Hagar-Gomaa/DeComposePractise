@@ -6,4 +6,6 @@
     <string name="next">Next</string>
     <string name="back">back</string>
     <string name="showMore">Show more</string>
+    <string name="images_in_jpeg">JPEG images</string>
+    <string name="images_in_svg">Svg images</string>
 </resources>
