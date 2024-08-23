@@ -6,14 +6,14 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.hager_gomaa.decomposepractise.composable.Loading
-import com.hager_gomaa.decomposepractise.navigation.ScreenTwoComponent
+import com.hager_gomaa.decomposepractise.root.ScreenTwoComponent
 import com.hager_gomaa.decomposepractise.screentwo.component.LuzyColumItemResoursesData
 import com.hager_gomaa.decomposepractise.screentwo.intent.ScreenTwoIntent
-import com.hager_gomaa.decomposepractise.screentwo.viewmodel.ResouresDataViewModel
+import com.hager_gomaa.decomposepractise.screentwo.provider.ResouresDataProvider
 
 
 @Composable
-fun ScreenTwo(component: ScreenTwoComponent, viewModel: ResouresDataViewModel = viewModel()) {
+fun ScreenTwo(component: ScreenTwoComponent, viewModel: ResouresDataProvider = viewModel()) {
     // state retrieve viewmodel state data
     val state by viewModel.state.collectAsState()
 

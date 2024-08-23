@@ -1,4 +1,4 @@
-package com.hager_gomaa.decomposepractise.navigation
+package com.hager_gomaa.decomposepractise.root
 
 // hande type of screen one events
 sealed class ScreenOneEvent {

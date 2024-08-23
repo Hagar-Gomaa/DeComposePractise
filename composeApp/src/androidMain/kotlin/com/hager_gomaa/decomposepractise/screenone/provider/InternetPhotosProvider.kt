@@ -1,17 +1,17 @@
-package com.hager_gomaa.decomposepractise.screenone.ui.viewmodel
+package com.hager_gomaa.decomposepractise.screenone.provider
 
 import androidx.lifecycle.viewModelScope
 import com.hager_gomaa.decomposepractise.base.BaseViewModel
-import com.hager_gomaa.decomposepractise.screenone.ui.intent.ScreenOneIntent
-import com.hager_gomaa.decomposepractise.screenone.ui.uistate.ImageUiState
-import com.hager_gomaa.decomposepractise.screenone.ui.uistate.ScreenOneUiState
+import com.hager_gomaa.decomposepractise.screenone.intent.ScreenOneIntent
+import com.hager_gomaa.decomposepractise.screenone.uistate.ImageUiState
+import com.hager_gomaa.decomposepractise.screenone.uistate.ScreenOneUiState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class InternetPhotosViewModel @Inject constructor() :
+class InternetPhotosProvider @Inject constructor() :
     BaseViewModel<ScreenOneUiState, ScreenOneIntent>(
         ScreenOneUiState()
     ) {

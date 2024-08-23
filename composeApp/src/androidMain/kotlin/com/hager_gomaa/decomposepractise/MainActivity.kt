@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.arkivanov.decompose.retainedComponent
-import com.hager_gomaa.decomposepractise.navigation.DefaultRootComponent
+import com.hager_gomaa.decomposepractise.root.DefaultRootComponent
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

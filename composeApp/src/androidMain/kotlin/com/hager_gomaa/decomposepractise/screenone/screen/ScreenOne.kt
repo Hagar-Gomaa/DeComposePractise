@@ -1,4 +1,4 @@
-package com.hager_gomaa.decomposepractise.screenone.ui.screen
+package com.hager_gomaa.decomposepractise.screenone.screen
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -6,15 +6,15 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.hager_gomaa.decomposepractise.composable.Loading
-import com.hager_gomaa.decomposepractise.navigation.ScreenOneComponent
-import com.hager_gomaa.decomposepractise.navigation.ScreenOneEvent
-import com.hager_gomaa.decomposepractise.screenone.ui.component.LuzyColumItemRemoteData
-import com.hager_gomaa.decomposepractise.screenone.ui.intent.ScreenOneIntent
-import com.hager_gomaa.decomposepractise.screenone.ui.viewmodel.InternetPhotosViewModel
+import com.hager_gomaa.decomposepractise.root.ScreenOneComponent
+import com.hager_gomaa.decomposepractise.root.ScreenOneEvent
+import com.hager_gomaa.decomposepractise.screenone.component.LuzyColumItemRemoteData
+import com.hager_gomaa.decomposepractise.screenone.intent.ScreenOneIntent
+import com.hager_gomaa.decomposepractise.screenone.provider.InternetPhotosProvider
 
 @Composable
 fun ScreenOne(
-    component: ScreenOneComponent, viewModel: InternetPhotosViewModel = viewModel()
+    component: ScreenOneComponent, viewModel: InternetPhotosProvider = viewModel()
 ) {
     // state retrieve viewmodel state data
     val state by viewModel.state.collectAsState()

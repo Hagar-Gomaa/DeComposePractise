@@ -1,4 +1,4 @@
-package com.hager_gomaa.decomposepractise.screenone.ui.uistate
+package com.hager_gomaa.decomposepractise.screenone.uistate
 
 //class to handel save url of image
 data class ImageUiState(val url: String)

@@ -6,8 +6,8 @@ import com.arkivanov.decompose.extensions.compose.jetbrains.stack.Children
 import com.arkivanov.decompose.extensions.compose.jetbrains.stack.animation.slide
 import com.arkivanov.decompose.extensions.compose.jetbrains.stack.animation.stackAnimation
 import com.arkivanov.decompose.extensions.compose.jetbrains.subscribeAsState
-import com.hager_gomaa.decomposepractise.navigation.DefaultRootComponent
-import com.hager_gomaa.decomposepractise.screenone.ui.screen.ScreenOne
+import com.hager_gomaa.decomposepractise.root.DefaultRootComponent
+import com.hager_gomaa.decomposepractise.screenone.screen.ScreenOne
 import com.hager_gomaa.decomposepractise.screentwo.screen.ScreenTwo
 import org.jetbrains.compose.ui.tooling.preview.Preview
 

@@ -1,4 +1,4 @@
-package com.hager_gomaa.decomposepractise.screenone.ui.component
+package com.hager_gomaa.decomposepractise.screenone.component
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,7 +12,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.hager_gomaa.decomposepractise.screenone.ui.uistate.ImageUiState
+import com.hager_gomaa.decomposepractise.screenone.uistate.ImageUiState
 
 
 @Composable

@@ -1,4 +1,4 @@
-package com.hager_gomaa.decomposepractise.navigation
+package com.hager_gomaa.decomposepractise.root
 
 import com.arkivanov.decompose.ComponentContext
 

@@ -1,4 +1,4 @@
-package com.hager_gomaa.decomposepractise.screenone.ui.component
+package com.hager_gomaa.decomposepractise.screenone.component
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
@@ -14,7 +14,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.hager_gomaa.decomposepractise.R
-import com.hager_gomaa.decomposepractise.screenone.ui.uistate.ScreenOneUiState
+import com.hager_gomaa.decomposepractise.screenone.uistate.ScreenOneUiState
 
 @Composable
 fun LuzyColumItemRemoteData(items: ScreenOneUiState, onClicked: () -> Unit) {

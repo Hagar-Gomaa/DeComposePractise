@@ -1,4 +1,4 @@
-package com.hager_gomaa.decomposepractise.screenone.ui.intent
+package com.hager_gomaa.decomposepractise.screenone.intent
 
 // represent action do in screen
 sealed class ScreenOneIntent {

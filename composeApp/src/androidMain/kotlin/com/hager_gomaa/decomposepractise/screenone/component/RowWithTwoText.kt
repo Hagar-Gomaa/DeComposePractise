@@ -1,4 +1,4 @@
-package com.hager_gomaa.decomposepractise.screenone.ui.component
+package com.hager_gomaa.decomposepractise.screenone.component
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row

@@ -1,4 +1,4 @@
-package com.hager_gomaa.decomposepractise.screentwo.viewmodel
+package com.hager_gomaa.decomposepractise.screentwo.provider
 
 import androidx.lifecycle.viewModelScope
 import com.hager_gomaa.decomposepractise.R
@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ResouresDataViewModel @Inject constructor() :
+class ResouresDataProvider @Inject constructor() :
     BaseViewModel<ScreenTwoUiState, ScreenTwoIntent>(
         ScreenTwoUiState()
     ) {
