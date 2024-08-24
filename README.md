@@ -1,5 +1,5 @@
 ## **MyComposeApp:**
-This Android application demonstrates a two-screen architecture using Jetpack Compose, Coil for image loading, Decompose for navigation, and the MVI architecture pattern with MVIKotlin.
+This Android application demonstrates a two-screen architecture using Jetpack Compose, Coil for image loading, Decompose for navigation, and the MVI architecture pattern with MVI.
 
 * **Screen 1:** Show list of images of type jpeg and svg from internet, with **Show more** button.
  
@@ -14,7 +14,7 @@ This Android application demonstrates a two-screen architecture using Jetpack Co
 
 3. Decompose: Manages screen navigation.
 
-4. MVIKotlin: Implements the Model-View-Intent (MVI) architecture.
+4. MVI: Implements the Model-View-Intent (MVI) architecture.
 
 
 ## **Technologies:**
@@ -27,7 +27,7 @@ This Android application demonstrates a two-screen architecture using Jetpack Co
 
 4. Decompose
 
-5. MVIKotlin
+5. MVI
 
 
 ## **Prerequisites:**
